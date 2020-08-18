@@ -1,7 +1,7 @@
 import { Logger } from "tslog";
 import { Post } from '../data/post';
 import { RegexUtil } from '../util/regex_util';
-import { Options, Sort, FilterType } from '../data/index';
+import { Options, Sort, FilterType } from '../data';
 
 const log = new Logger();
 

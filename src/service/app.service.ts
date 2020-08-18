@@ -1,6 +1,6 @@
 import { Logger } from "tslog";
 import { ClientUtil } from '../client/util';
-import { Options } from '../data/index';
+import { Options } from '../data';
 import { Post } from '../data/post';
 import CacheService from "./cache.service";
 import { DataService } from "./data.service";

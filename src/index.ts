@@ -2,7 +2,7 @@ import cors from 'cors';
 import express from 'express';
 import { graphqlHTTP } from 'express-graphql';
 import { buildSchema, GraphQLSchema } from 'graphql';
-import { root } from './api/index';
+import { root } from './api';
 import { AppService } from "./service/app.service";
 import { DataService } from './service/data.service';
 import CacheService from './service/cache.service';

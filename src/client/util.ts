@@ -3,8 +3,10 @@ import * as cheerio from 'cheerio';
 import { Browser, Page, launch } from 'puppeteer';
 import { Logger } from "tslog";
 
+// NOT used
 type OnPage = (page: Page) => Promise<any>;
 
+// NOT used
 type ClientOptions = {
   //
   writeFile?: boolean;
@@ -22,12 +24,14 @@ export class ClientUtil {
     return cheerio.load(html);
   }
 
+  // NOT used
   static readCheerio(opts: ClientOptions): CheerioStatic {
     this.log.debug('readCheerio()');
     const html: string = fs.readFileSync(opts.filePath, 'utf8');
     return cheerio.load(html);
   }
 
+  // NOT used
   static async readPuppeteerPage(opts: ClientOptions, onPage: OnPage) {
     this.log.debug('readPuppeteerPage()');
 

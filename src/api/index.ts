@@ -1,6 +1,6 @@
 import { Logger } from "tslog";
 import { appService } from '../index';
-import { Options } from '../data/index';
+import { Options } from '../data';
 
 const log = new Logger();
 
@@ -31,6 +31,8 @@ const root: any = {
       options.sort = args.orderBy.comments;
     }
     log.debug('options: ', options);
+
+    //
 
     return appService.getPosts(options);
   },
