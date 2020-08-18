@@ -17,7 +17,7 @@ export type Filter = {
 };
 
 export type Options = {
-  page: number;
-  filter: Filter; // comments filter
-  sort: Sort; // comments sort
+  page?: number;
+  filter?: Filter; // comments filter
+  sort?: Sort; // comments sort
 };
